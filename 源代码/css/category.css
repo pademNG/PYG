@@ -1,0 +1,78 @@
+.pyg_main {
+  position: relative;
+  padding-left: 90px;
+}
+
+.pyg_main .pyg_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90px;
+  overflow: scroll;
+}
+
+.pyg_main .pyg_left ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pyg_main .pyg_left ul a {
+  color: black;
+  font-size: 16px;
+}
+
+.pyg_main .pyg_left ul li {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.pyg_main .pyg_left ul .active {
+  background-color: #fff;
+  border-left: 2px solid #0094ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pyg_main .pyg_right {
+  height: 100%;
+  background-color: #fff;
+  overflow: scroll;
+}
+
+.pyg_main .pyg_right .pyg_cates .catesTil {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  color: #0094ff;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.pyg_main .pyg_right .pyg_cates .catesIts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pyg_main .pyg_right .pyg_cates .catesIts ul li {
+  width: 33.3%;
+}
+
+.pyg_main .pyg_right .pyg_cates .catesIts ul li a img {
+  width: 90%;
+}
+
+.pyg_main .pyg_right .pyg_cates .catesIts ul li a .catesName {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+/*# sourceMappingURL=category.css.map */

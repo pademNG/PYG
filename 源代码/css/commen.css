@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.pyg_header {
+  height: 45px;
+  width: 100%;
+  padding: 5px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.pyg_main {
+  height: 100%;
+  overflow: scroll;
+}
+
+.pyg_footer {
+  height: 45px;
+  width: 100%;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.pyg_footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pyg_footer ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.pyg_footer ul li a {
+  color: black;
+}
+
+.pyg_footer ul li a span {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.pyg_footer ul li a .pyg_test {
+  font-size: 12px;
+}
+/*# sourceMappingURL=commen.css.map */
