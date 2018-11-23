@@ -20,73 +20,19 @@
     </header>
 
     <div class="pyg_main">
-       <div class="pyg_left">
+        <div class="pyg_left">
 
-       </div>
-       <div class="pyg_right">
-           <div class="pyg_cates">
-                <div class="catesTil">电视</div>
-                <div class="catesIts">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://api.pyg.ak48.xyz/full/fe1622d89fe15ebfb00e2c7e3a1c3227b55fbafa.jpg" alt="">
-                                <div class="catesName">曲面电视</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-           </div>
-       </div>
+        </div>
+        <div class="pyg_right">
+
+        </div>
     </div>
-    
+
     <!-- 底部 -->
     <footer class="pyg_footer">
         <ul>
             <li>
-                <a href="javascript:;">
+                <a href="../index.html">
                     <span class="fa fa-home"></span>
                     <div class="pyg_test">首页</div>
                 </a>
@@ -111,25 +57,52 @@
             </li>
         </ul>
     </footer>
-    
+
     <!-- 左侧导航模板 -->
     <script type="text/template" id="categoriesTel">
         <ul>
             {{each data value index}}
             {{if index == 0}}
-            <a href="javascript:;"><li class="active">{{value.cat_name}}</li></a>
+            <li class="active">{{value.cat_name}}</li>
             {{/if}}
             {{if index !=0}}
-            <a href="javascript:;"><li>{{value.cat_name}}</li></a>
+            <li>{{value.cat_name}}</li>
             {{/if}}
             {{/each}}
         </ul>
     </script>
     <!-- 左侧导航模板 -->
+    <!-- 右侧分类模板 -->
+    <script type="text/template" id="catesTelRight">
+
+        <div>
+            {{each data value index}}
+                <div class="pyg_cates">
+                    <div class="catesTil">{{value.cat_name}}</div>
+                    <div class="catesIts">
+                        <ul>
+                            {{each value.children subvalue subindex}}
+                            <li>
+                                <a href="">
+                                    <img src="http://api.pyg.ak48.xyz/{{subvalue.cat_icon}}" alt="">
+                                    <div class="catesName">{{subvalue.cat_name}}</div>
+                                </a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            {{/each}}
+       </div>
+
+    </script>
+    <!-- 右侧分类模板 -->
 </body>
 <script src="../lib/zepto/zepto.js"></script>
 <script src="../lib/mui/js/mui.js"></script>
+<script src="../lib/iscroll/iscroll.js"></script>
 <script src="../lib/arttemplate/template-web.js"></script>
+<script src="../js/common.js"></script>
 <script src="../js/category.js"></script>
 
 </html>

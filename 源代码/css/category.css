@@ -9,7 +9,7 @@
   left: 0;
   height: 100%;
   width: 90px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .pyg_main .pyg_left ul {
@@ -18,14 +18,10 @@
   list-style: none;
 }
 
-.pyg_main .pyg_left ul a {
-  color: black;
-  font-size: 16px;
-}
-
 .pyg_main .pyg_left ul li {
   text-align: center;
   height: 40px;
+  color: black;
   line-height: 40px;
 }
 
@@ -39,7 +35,7 @@
 .pyg_main .pyg_right {
   height: 100%;
   background-color: #fff;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .pyg_main .pyg_right .pyg_cates .catesTil {
