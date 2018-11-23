@@ -11,7 +11,7 @@ $(function () {
     function getSwiperdata() {
         $.ajax({
             type: "get",
-            url: "http://api.pyg.ak48.xyz/api/public/v1/home/swiperdata",
+            url: "home/swiperdata",
             dataType: "json",
             success: function (result) {
                 if(result.meta.status==200){
@@ -34,7 +34,7 @@ $(function () {
     function getCatitems(){
         $.ajax({
             type: "get",
-            url: "http://api.pyg.ak48.xyz/api/public/v1/home/catitems",
+            url: "home/catitems",
             dataType: "json",
             success: function (result) {
                 if(result.meta.status==200){
@@ -50,7 +50,7 @@ $(function () {
     function getGoodslist(){
         $.ajax({
             type: "get",
-            url: "http://api.pyg.ak48.xyz/api/public/v1/home/goodslist",
+            url: "home/goodslist",
             dataType: "json",
             success: function (result) {
                 if(result.meta.status==200){

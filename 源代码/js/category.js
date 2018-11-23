@@ -52,7 +52,7 @@ $(function () {
         if (localStorage.getItem("cates")) {
             var catesStr = localStorage.getItem("cates");
             var localData = JSON.parse(catesStr);
-            if (Date.now() - localData.time > 10 * 1000) {
+            if (Date.now() - localData.time > 60*120 * 1000) {
                 getCategories();
             } else {
                 Category = localData.data;
